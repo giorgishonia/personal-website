@@ -1,0 +1,266 @@
+*,
+html {
+
+    scroll-behavior: smooth !important;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+
+body{
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    position: fixed;
+    gap: 20px;
+    min-width: 210px;
+    max-width: 100%;
+    padding: 10px;
+    background-color: black;
+    height: 100vh;
+    color: white;
+    font-size: 20px;
+    transition: 200ms;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
+    margin: 0;
+}
+
+.log-in-nav{
+    text-align: center;
+    border-radius: 15px;
+    width: 65%;
+    background-color: darkblue;
+    position: absolute;
+    bottom: 40px;
+}
+
+log-in-nav:hover{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    color: black;
+    transition: 200ms;
+}
+
+log-in-nav:active{
+    transform: scale(0.9);
+    background-color: rgb(211, 211, 211);
+}
+
+#navTitles{
+    cursor: pointer;
+    transition: 100ms;
+    user-select: none;
+    letter-spacing: 2px;
+    padding: 15px;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+#navTitles:hover{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    
+}
+
+
+#navTitles:active{
+    transform: scale(0.98);
+    transition: 100ms;
+}
+
+
+.title{
+    color: white;
+    font-size: 20px;
+}
+
+/* Initially hide the navigation links off the screen to the left */
+nav {
+    display: block;
+    transform: translateX(0);
+    transition: transform 1s;
+}
+
+/* Show the navigation links with a sliding animation when the "show-nav" class is added */
+nav.show-nav {
+    transform: translateX(-100%);
+}
+
+/* Style the toggle button */
+#navToggleBtn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 220px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 30%;
+    width: 50px;
+    top: 22px;
+    text-align: end;
+    font-size: 19px;
+    z-index:  2;
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.329);}
+
+
+
+hr{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.35);
+    margin-top: 30px;
+
+}
+
+#nav-title{
+    padding: 10px;
+        cursor: pointer;
+            transition: 100ms;
+            user-select: none;
+            letter-spacing: 2px;
+            padding: 15px;
+            align-self: center;
+            margin-left: -10px;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+
+.rotate {
+    transform: rotate(45deg);
+    /* Rotate the element 45 degrees */
+    transition: transform 0.3s;
+    font-size: 22px;
+
+}
+
+.nuts{
+    width: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+/* Add a CSS class to hide the elements */
+.hidden {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.main-section2{
+    color: white;
+    padding: 30px;
+    transition: transform 1s;
+    margin-left: 200px;
+    width: 80vw;
+    height: 100vh;
+    text-align: center;
+}
+
+#home{
+    transition: transform 1s;
+    width: 80vw;
+    z-index: -1;
+}
+
+#home.move-section{
+    transform: translateX(-240px);
+    transition: transform 1s;
+}
+
+
+
+#contact{
+    transition: transform 1s;
+    width: 80vw;
+    z-index: -1;
+}
+
+#contact.move-section-contact{
+    transform: translateX(-240px);
+    transition: transform 1s;
+}
+
+#quotes {
+    transition: transform 1s;
+    width: 80vw;
+    z-index: -1;
+}
+
+#quotes.move-section-quotes {
+    transform: translateX(-240px);
+    transition: transform 1s;
+}
+
+#goals {
+    transition: transform 1s;
+    width: 80vw;
+    z-index: -1;
+}
+
+#goals.move-section-goals {
+    transform: translateX(-240px);
+    transition: transform 1s;
+}
+
+#toDoList{
+    transition: transform 1s;
+    width: 80vw;
+    z-index: -1;
+}
+
+#toDoList.move-section-todo {
+    transform: translateX(-240px);
+    transition: transform 1s;
+}
+
+/* #homeTitle{
+        transition: 1s;
+}
+
+#homeTitle.move-text{
+    transform: translateX(200px);
+    transition: 1s;
+} */
+
+h1{
+    font-size: 50px;
+    color: black;
+}
+
+
+
+.glavni{
+    display: flex;
+    z-index: -2;
+}
+
+.home-title{
+    text-align: center;
+}
+
+.main-section-flex-column{
+    display: flex;
+    flex-direction: column;
+    z-index: -2;
+}
