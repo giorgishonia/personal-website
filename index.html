@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="google-signin-client_id" content="280733551835-gjjf1k10u9ch71q8ch91c6gope3nhikt.apps.googleusercontent.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="shortcut icon" href="./images/d4179fca656e8d9166bcde22c192d612.jpg" type="image/x-icon">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 </head>
 <body>
 
@@ -26,7 +29,9 @@
             <!-- <div class="color-toggle"><button>🌚</button></div> -->
             <div id="navTitles" class="settings-nav"><i class="fas fa-cog"></i><span>&nbsp;&nbsp;Settings</span></div>
             <hr>
-            <div id="navTitles" class="log-in-nav"><i class="fas fa-sign-in-alt"></i><span>&nbsp;&nbsp;Log Out</span></div>    
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+            <div id="navTitles" class="g-signin2" data-onsuccess="onSignIn"  class="log-in-nav"><i class="fas fa-sign-in-alt"></i><span>&nbsp;&nbsp;Log Out</span></div>    
         </nav>
 
         <div class="main-section-flex-column">
@@ -69,6 +74,16 @@
             
         </div>
     </div>
+
+    <script>
+  gapi.load('auth2', function() {
+    gapi.auth2.init({
+      client_id: '280733551835-gjjf1k10u9ch71q8ch91c6gope3nhikt.apps.googleusercontent.com',
+    });
+  });
+</script>
+
 </body>
+
 <script src="script.js"></script>
 </html>
